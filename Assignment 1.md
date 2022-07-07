@@ -35,6 +35,9 @@ through the project life cycle.
 
 ## Requrements: 
 
+<!--- 
+comment block (not visible in final document)
+--->
 
 
 ### User
@@ -42,20 +45,20 @@ through the project life cycle.
 ** Functional **
 
 	Select a list of stocks
-	Choose a stock to display
-	Comparing Stocks
-	Sort Stocks
+	Choose a stock to display  
+	Comparing Stocks !!! - I don't think this is required fo the task
+	Sort Stocks !!! - I don't think this is required for the task
 	Stock Meta-Data
 		Stock metadata
 		Comparative analysis (two+ stocks)
 
  ** Nonfunctional **
-		
+
 	Load the list within 3 seconds
-	return a complete list
+	return a complete list (no parts missing)
 	provide accurate data
 	readability/understandability
-    
+
 ### Developer
 
 ** Functional **
