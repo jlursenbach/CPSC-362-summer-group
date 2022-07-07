@@ -58,7 +58,7 @@ through the project life cycle.
 	click on a stock to look at individual data
 	select 2 stocks 
 
-## Requrements: 
+## Requirements: 
 
 ### Functional
 
