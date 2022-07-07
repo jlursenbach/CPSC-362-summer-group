@@ -27,3 +27,59 @@ A list of all the necessary use cases and user stories in the format discussed i
 requirements of the feature #1 for both the user and developers to implement it.
 Note: Please expect that the user requirements can be changed as you go
 through the project life cycle.
+
+## Requrements: 
+
+### Functional
+
+	scrape stock data from - somewhere -
+	Select a list of stocks
+	Choose a stock to display
+	Comparing Stocks
+	Get the data
+		Stock metadata
+		Comparative analysis (two+ stocks)
+
+| note: (we need to run our assignment through prof. before submission. I am listening to him pull apart people's ideas.
+
+### Nonfunctional
+		
+	Load the list within 3 seconds
+	provide a complete list
+	provide accurate data
+	readability/understandability
+    
+
+## User Cases
+
+	a button that displays all of the stocks
+	click on a stock to look at individual data
+	select 2 stocks 
+
+## Requrements: 
+
+### Functional
+
+	scrape stock data from - somewhere -
+	Select a list of stocks
+	Choose a stock to display
+	Comparing Stocks
+	Get the data
+		Stock metadata
+		Comparative analysis (two+ stocks)
+
+| note: (we need to run our assignment through prof. before submission. I am listening to him pull apart people's ideas.
+
+### Nonfunctional
+		
+	Load the list within 3 seconds
+	provide a complete list
+	provide accurate data
+	readability/understandability
+    
+
+## User Cases
+
+	a button that displays all of the stocks
+	click on a stock to look at individual data
+	select 2 stocks 
