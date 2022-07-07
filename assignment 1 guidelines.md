@@ -8,8 +8,9 @@ use case and user story format.
 
 ### Requirements for this assignment
 
-One of the features of the portfolio management system, **feature #1, is “Customers select a
-stock from the Dow Jones index for detailed information about the stock for analysis.”.** 
+One of the features of the portfolio management system: 
+
+**feature #1, is “Customers select a stock from the Dow Jones index for detailed information about the stock for analysis.”.** 
 
 1. Analyze the features and identify all the requirements to implement this feature, such as
 getting stock data (e.g., from Yahoo Finance), finding out a list of stocks in Dow Jones, and
