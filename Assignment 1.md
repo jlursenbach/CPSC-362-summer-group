@@ -12,11 +12,12 @@ One of the features of the portfolio management system:
 
 **feature #1, is “Customers select a stock from the Dow Jones index for detailed information about the stock for analysis.”.** 
 
-1. Analyze the features and identify all the requirements to implement this feature, such as
-getting stock data (e.g., from Yahoo Finance), finding out a list of stocks in Dow Jones, and
-detailed information (e.g., Open, Close, Bid, Ask, Volume, PE ratio, EPS, analyst’s
-recommendation), allowing customers to choose a stock to display the detailed information,
-etc.
+1. Analyze the features and identify all the requirements to implement this feature, 
+	such as:
+	1) getting stock data (e.g., from Yahoo Finance), 
+	2) finding out a list of stocks in Dow Jones, and detailed information 
+	 	(e.g., Open, Close, Bid, Ask, Volume, PE ratio, EPS, analyst’s recommendation) 
+	4) allowing customers to choose a stock to display the detailed information, etc.
 
 2. Write all the necessary use cases AND user stories to implement the feature (a) of the
 system.
@@ -46,11 +47,24 @@ comment block (not visible in final document)
 
 	Select a list of stocks
 	Choose a stock to display  
-	Comparing Stocks !!! - I don't think this is required fo the task
-	Sort Stocks !!! - I don't think this is required for the task
+	Comparing Stocks !!! (JU) - I don't think this is required fo the task
+	Sort Stocks !!! (JU) - I don't think this is required for the task
 	Stock Meta-Data
 		Stock metadata
+			-the product that the company sells
+			-product popularity (consumer needs)
+			-gstock price trend chart (chart should show company performance up to 5 years)
+			-PE ratio (price per earning)
+			-PS ratio (price per share)
+			-company cash reserve
+			-gcompany debt
+			-company management effectiveness data 
+				(return on asset and return on equity data)
+		
 		Comparative analysis (two+ stocks)
+
+!!! (JU) The task is: Customers select a stock from the Dow Jones index for detailed information. 
+
 
  ** Nonfunctional **
 
