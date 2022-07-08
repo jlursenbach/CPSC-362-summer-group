@@ -47,40 +47,47 @@ comment block (not visible in final document)
 
 	Select a list of stocks
 	Choose a stock to display  
-	Comparing Stocks !!! (JU) - I don't think this is required fo the task
-	Sort Stocks !!! (JU) - I don't think this is required for the task
+	Sort Stocks 
+		Sort by:
+			-
+			-
+			-
 	Stock Meta-Data
-		Stock metadata
-			-the product that the company sells
-			-product popularity (consumer needs)
-			-gstock price trend chart (chart should show company performance up to 5 years)
-			-PE ratio (price per earning)
-			-PS ratio (price per share)
-			-company cash reserve
-			-gcompany debt
-			-company management effectiveness data 
-				(return on asset and return on equity data)
-		
-		Comparative analysis (two+ stocks)
+		-the product that the company sells
+		-product popularity (consumer needs)
+		-gstock price trend chart (chart should show company performance up to 5 years)
+		-PE ratio (price per earning)
+		-PS ratio (price per share)
+		-company cash reserve
+		-company debt
+		-company management effectiveness data 
+			(return on asset and return on equity data)
 
-!!! (JU) The task is: Customers select a stock from the Dow Jones index for detailed information. 
+	Comparing Stocks !!! (JU) I'm not sure this is required for the task?
+	Comparative analysis (two+ stocks) !!! (JU) I'm not sure this is required for the task?
+
+!!! (JU) The task is: Customers select a stock from the Dow Jones index for detailed information.  
 
 
- ** Nonfunctional **
+ ** Nonfunctional ** 
 
 	Load the list within 3 seconds
 	return a complete list (no parts missing)
 	provide accurate data
-	readability/understandability
+	readability/understandability/organization
+	
 
 ### Developer
 
 ** Functional **
 
 	scrape stock data from - somewhere -
+	grab stock metadata from - somewhere - (Yahoo stocks?)
 
  ** Nonfunctional **
  
+ 	Handle multiple users accessing system
+	
  
 
 ## User Cases
