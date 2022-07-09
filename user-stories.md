@@ -19,7 +19,7 @@ Story 5
 
 # Developer Stories:
 ```
-Story 6
+Story 7
 {"story id and name": "Get stock data",
 "Actor": "developer",
 "description" : "Get stock data using yfinance"}
