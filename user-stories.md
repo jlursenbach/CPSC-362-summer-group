@@ -2,26 +2,41 @@
 # User Stories:
 ```
 Story 1
-{"ID and Name": "AC-02 Select a List of Stocks",
+{
+"ID and Name": "AC-02 Select a List of Stocks",
 "Actor": "User",
-"Description": "Upon loading the page or selecting a button, user will be provided with a complete list of Dow Jones stocks"}
+"Description": "Upon loading the page or selecting a button, user will be provided with a complete list of Dow Jones stocks"
+}
 
 Story 4
-{"story id and name": "Select Specific stock from list",
+{
+"story id and name": "Select Specific stock from list",
 "Actor": "user",
-"description" : "The user will select a stock, the data for that stock will be returned."}
+"Description" : "The user will select a stock, the data for that stock will be returned."
+}
 
 Story 5
-{"ID and Name": "AC-01 View stock data",
+{
+"story id and name": "AC-01 View stock data",
 "Actor": "User",
-"Description": "Upon selecting a stock, the system will display data related to the selected stock"}
+"Description": "Upon selecting a stock, the system will display data related to the selected stock"
+}
 ```
 
 # Developer Stories:
 ```
 Story 7
-{"story id and name": "Get stock data",
-"Actor": "developer",
-"description" : "Get stock data using yfinance"}
+{
+"story id and name": "Get stock data",
+"Actor": "Developer",
+"Description" : "Get stock data using yfinance"
+}
+
+Story 9
+{
+"story id and name": "Interactive Display System for Stock Data",
+"Actor": "Developer",
+"Description" : "Stock data can be displayed in a html frame, another page, a dropdown, or a pop-up"
+}
 ```
 
