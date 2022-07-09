@@ -10,16 +10,16 @@ Story 1
 
 Story 2
 {
-"ID and Name": "",
+"ID and Name": "Sort the list of stocks",
 "Actor": "User",
-"Description": ""
+"Description": "User will be able to sort the generated list in ascending or descending order"
 }
 
 Story 3
 {
-"ID and Name": "",
+"ID and Name": "Filter the list of stock",
 "Actor": "User",
-"Description": ""
+"Description": "User will be able to filter the list by name or category"
 }
 
 
