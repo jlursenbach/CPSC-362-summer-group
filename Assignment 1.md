@@ -88,9 +88,19 @@ comment block (not visible in final document)
 
 
 ## Use Cases
-
+![image](https://user-images.githubusercontent.com/61986930/178091324-204140ee-f2b4-48c7-98b0-066e475674e0.png)
+![image](https://user-images.githubusercontent.com/61986930/178091335-f3c88dbc-72c6-4a37-9d6f-51668f6d486a.png)
+![image](https://user-images.githubusercontent.com/61986930/178091338-a0dd40a2-57e6-43a4-b290-9402fe9420d0.png)
+![image](https://user-images.githubusercontent.com/61986930/178091344-a42be2b0-cff1-436a-becf-35005db22003.png)
+![image](https://user-images.githubusercontent.com/61986930/178091351-3b625ee7-e229-4c73-88c9-e288c6185b4d.png)
+### Use Case Dict
 
 
 ## User Stories
-
+![image](https://user-images.githubusercontent.com/61986930/178091357-c5d39a2b-9a9c-4e2a-a84c-d4775c12b988.png)
+![image](https://user-images.githubusercontent.com/61986930/178091361-49375536-d6d3-4ec8-a400-22727c95e14c.png)
+![image](https://user-images.githubusercontent.com/61986930/178091367-e98c4c57-4f95-4149-8838-5df8c4de1c9c.png)
+![image](https://user-images.githubusercontent.com/61986930/178091374-8fd69928-632e-46be-8cd9-80d43d7ad626.png)
+![image](https://user-images.githubusercontent.com/61986930/178091380-9d60232a-1cfe-4236-9862-5aa5e9dcb204.png)
+### User stories Dict
 
