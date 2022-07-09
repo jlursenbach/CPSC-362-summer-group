@@ -91,10 +91,9 @@ comment block (not visible in final document)
 ## Use Cases
 [Use Cases Link](https://github.com/jlursenbach/CPSC-362-summer-group/blob/4-assignment-1/use_cases.md)
 
-UC-01         |  UC-02
+UC-01         |  UC-02 (image of UC1 added as place holder to check final image size)
 :-------------------------:|:-------------------------:
-[<img src="https://user-images.githubusercontent.com/61986930/178091324-204140ee-f2b4-48c7-98b0-066e475674e0.png" width="600">]() |  [<img src="" width="600">]()
-
+[<img src="https://user-images.githubusercontent.com/61986930/178091324-204140ee-f2b4-48c7-98b0-066e475674e0.png" width="600">]() |  [<img src="https://user-images.githubusercontent.com/61986930/178091324-204140ee-f2b4-48c7-98b0-066e475674e0.png" width="600">]()
 
 
 UC-03        |  UC-04
