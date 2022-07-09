@@ -1,5 +1,11 @@
+
 # User Stories:
 ```
+Story 1
+{"ID and Name": "AC-02 Select a List of Stocks",
+"Actor": "User",
+"Description": "Upon loading the page or selecting a button, user will be provided with a complete list of Dow Jones stocks"}
+
 Story 4
 {"story id and name": "Select Specific stock from list",
 "Actor": "user",
@@ -18,3 +24,4 @@ Story 6
 "Actor": "developer",
 "description" : "Get stock data using yfinance"}
 ```
+
