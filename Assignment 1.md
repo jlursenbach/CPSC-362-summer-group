@@ -120,10 +120,6 @@ DC-09        |  -
 [<img src="https://user-images.githubusercontent.com/61986930/178091351-3b625ee7-e229-4c73-88c9-e288c6185b4d.png" width="600">]() |  -
 
 
-
-### Use Case Dict
-
-
 ## User Stories
 [User Stories Link](https://github.com/jlursenbach/CPSC-362-summer-group/blob/4-assignment-1/user-stories.md)
 
@@ -150,7 +146,4 @@ UC-07         |  UC-08
 UC-09         |  UC-02
 :-------------------------:|:-------------------------:
 [<img src="https://user-images.githubusercontent.com/61986930/178091380-9d60232a-1cfe-4236-9862-5aa5e9dcb204.png" width="400">]() |  [<img src="" width="600">]()
-
-
-### User stories Dict
 
