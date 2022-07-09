@@ -44,12 +44,12 @@ comment block (not visible in final document)
 ## Functional Requirements: 
 	
 ### USER:
-	Generate a list of stocks
-	Sort the list
-	Filter the list
+	1.) Generate a list of stocks
+	2.) Sort the list
+	3.) Filter the list
 	     - we need to decide what to sort & filter by 
-	Select specific stock from the list
-	View stock data 
+	4.) Select specific stock from the list
+	5.) View stock data 
 		- the product that the company sells
 		- product popularity (consumer needs)
 		- stock price trend chart 
@@ -63,12 +63,12 @@ comment block (not visible in final document)
 				(return on asset and return on equity data)
 
 ### DEVELOPER:
-	scrape a list of stocks from - somewhere - (Yahoo finance?)
-	grab stock data from - somewhere - (Yahoo finance?)
+	6.) scrape a list of stocks from - somewhere - (Yahoo finance?)
+	7.) grab stock data from - somewhere - (Yahoo finance?)
 		 - is there a REST API for this?
 		  - https://algotrading101.com/learn/yahoo-finance-api-guide/
-	put the data into .json or py-dict
-	figure out an interactive display system for stock data	
+	8.) put the data into .json or py-dict
+	9.) figure out an interactive display system for stock data	
 		- display info from a py-dict or .json
 		- create a number of frames
 		- display info in a respective frame
