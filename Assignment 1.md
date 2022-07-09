@@ -41,57 +41,38 @@ comment block (not visible in final document)
 --->
 
 
-### User
+USER:
 
-** Functional **
-
-	Select a list of stocks
-	Choose a stock to display  
-	Sort Stocks 
-		Sort by:
-			-
-			-
-			-
-	Stock Meta-Data
-		-the product that the company sells
-		-product popularity (consumer needs)
-		-gstock price trend chart (chart should show company performance up to 5 years)
-		-PE ratio (price per earning)
-		-PS ratio (price per share)
-		-company cash reserve
-		-company debt
-		-company management effectiveness data 
+Generate a list of stocks
+Sort the list
+Filter the list
+     - we need to decide what to sort & filter by 
+Select specific stock from the list
+View stock data 
+	- the product that the company sells
+	- product popularity (consumer needs)
+	- stock price trend chart 
+	       (chart should show company performance up to 5 years)
+	- opening and closing prices
+	- PE ratio (price per earning)
+	- PS ratio (price per share)
+	- company cash reserve
+	- company debt
+	- company management effectiveness data 
 			(return on asset and return on equity data)
 
-	Comparing Stocks !!! (JU) I'm not sure this is required for the task?
-	Comparative analysis (two+ stocks) !!! (JU) I'm not sure this is required for the task?
-
-!!! (JU) The task is: Customers select a stock from the Dow Jones index for detailed information.  
-
-
- ** Nonfunctional ** 
-
-	Load the list within 3 seconds
-	return a complete list (no parts missing)
-	provide accurate data
-	readability/understandability/organization
-	
-
-### Developer
-
-** Functional **
-
-	scrape stock data from - somewhere -
-	grab stock metadata from - somewhere - (Yahoo stocks?)
-
- ** Nonfunctional **
- 
- 	Handle multiple users accessing system
-	cahnge
+DEVELOPER:
+scrape a list of stocks from - somewhere - (Yahoo finance?)
+grab stock data from - somewhere - (Yahoo finance?)
+	 - is there a REST API for this?
+	  - https://algotrading101.com/learn/yahoo-finance-api-guide/
+put the data into .json or py-dict
+figure out an interactive display system for stock data	
+	- display info from a py-dict or .json
+	- create a number of frames
+	- display info in a respective frame
+	- scroll, filter, select
+		```
  
 
-## User Cases
 
-	a button that displays all of the stocks
-	click on a stock to look at individual data
-	select 2 stocks 
