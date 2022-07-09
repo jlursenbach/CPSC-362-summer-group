@@ -75,6 +75,7 @@ comment block (not visible in final document)
 		- scroll, filter, select
 		
 ## Nonfunctional Requirements: 
+> not required for this assignment
 
 ## User
 	Load the list within 3 seconds
