@@ -18,22 +18,29 @@
 
 {
 "ID": "UC-2",
-"Name": "Return",
-"Description: "",
+"Name": "Sort the list of stocks",
+"Description: "The user is able to sort the list in descending or acsending order",
 "Primary Actor: "User",
-"Preconditions: [""],
-"Postconditions: [""],
-"Main Success Scenario (flow)": {1: ""} 
+"Preconditions: ["The user will see an option to sort the list,
+                  user can choose to sort the list in acending or descending order"],
+"Postconditions: ["The user will be displayed the list in the correct order they have chosen"],
+"Main Success Scenario (flow)": {1: "User clicks button to sort",
+                                 2: "Upon clicking the list is sorted in decending order",
+                                 3: "A second click on the button would sort in ascending order"} 
 }
 
 {
 "ID": "UC-3",
-"Name": "Return",
-"Description: "",
+"Name": "Filter the list of stocks",
+"Description: "The user is able to filter the list of stocks in category and in search",
 "Primary Actor: "User",
-"Preconditions: [""],
-"Postconditions: [""],
-"Main Success Scenario (flow)": {1: ""} 
+"Preconditions: ["The user will see an option to filter the list of stocks",
+                 "The user can see preset categories to filter by",
+                 "The user can use a search function to filter by name of stock"],
+"Postconditions: ["The user will be displayed the stock(s) which they have filtered"],
+"Main Success Scenario (flow)": {1: "User selects a category to filter",
+                                 2: "User can search for stock by name",
+                                 3: "Correct stock(s) will be displayed"} 
 }
 
 {
