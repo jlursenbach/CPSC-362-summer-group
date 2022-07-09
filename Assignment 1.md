@@ -90,57 +90,65 @@ comment block (not visible in final document)
 
 ## Use Cases
 
+UC-01         |  UC-02
+:-------------------------:|:-------------------------:
+[<img src="https://user-images.githubusercontent.com/61986930/178091324-204140ee-f2b4-48c7-98b0-066e475674e0.png" width="600">]() |  [<img src="" width="600">]()
 
-UC-01
-[<img src="https://user-images.githubusercontent.com/61986930/178091324-204140ee-f2b4-48c7-98b0-066e475674e0.png" width="600">]()
 
-UC-02
 
-UC-03
+UC-03        |  UC-04
+:-------------------------:|:-------------------------:
+ [<img src="" width="600">]() |  [<img src="https://user-images.githubusercontent.com/61986930/178091335-f3c88dbc-72c6-4a37-9d6f-51668f6d486a.png" width="600">]()
 
-UC-04
-[<img src="https://user-images.githubusercontent.com/61986930/178091335-f3c88dbc-72c6-4a37-9d6f-51668f6d486a.png" width="600">]()
 
-UC-05
-[<img src="https://user-images.githubusercontent.com/61986930/178091338-a0dd40a2-57e6-43a4-b290-9402fe9420d0.png" width="600">]()
 
-DC-06
+UC-05        |  DC-06
+:-------------------------:|:-------------------------:
+[<img src="https://user-images.githubusercontent.com/61986930/178091338-a0dd40a2-57e6-43a4-b290-9402fe9420d0.png" width="600">]() |  [<img src="" width="600">]()
 
-DC-07
-[<img src="https://user-images.githubusercontent.com/61986930/178091344-a42be2b0-cff1-436a-becf-35005db22003.png" width="600">]()
 
-DC-08
 
-DC-09
-[<img src="https://user-images.githubusercontent.com/61986930/178091351-3b625ee7-e229-4c73-88c9-e288c6185b4d.png" width="600">]()
+DC-07         |  DC-08
+:-------------------------:|:-------------------------:
+[<img src="https://user-images.githubusercontent.com/61986930/178091344-a42be2b0-cff1-436a-becf-35005db22003.png" width="600">]() |  [<img src="" width="600">]()
+
+
+
+DC-09        |  -
+:-------------------------:|:-------------------------:
+[<img src="https://user-images.githubusercontent.com/61986930/178091351-3b625ee7-e229-4c73-88c9-e288c6185b4d.png" width="600">]() |  -
+
 
 
 ### Use Case Dict
 
 
 ## User Stories
-UC-01
-[<img src="https://user-images.githubusercontent.com/61986930/178091357-c5d39a2b-9a9c-4e2a-a84c-d4775c12b988.png" width="400">]()
 
-UC-02
+UC-01         |  UC-02
+:-------------------------:|:-------------------------:
+[<img src="https://user-images.githubusercontent.com/61986930/178091357-c5d39a2b-9a9c-4e2a-a84c-d4775c12b988.png" width="400">]() |  [<img src="" width="600">]()
 
-UC-03
 
-UC-04
-[<img src="https://user-images.githubusercontent.com/61986930/178091361-49375536-d6d3-4ec8-a400-22727c95e14c.png" width="400">]()
+UC-03         |  UC-04
+:-------------------------:|:-------------------------:
+[<img src="" width="600">]() |  [<img src="https://user-images.githubusercontent.com/61986930/178091361-49375536-d6d3-4ec8-a400-22727c95e14c.png" width="400">]()
 
-UC-05
-[<img src="https://user-images.githubusercontent.com/61986930/178091367-e98c4c57-4f95-4149-8838-5df8c4de1c9c.png" width="400">]()
 
-DC-06
+UC-05         |  UC-06
+:-------------------------:|:-------------------------:
+[<img src="https://user-images.githubusercontent.com/61986930/178091367-e98c4c57-4f95-4149-8838-5df8c4de1c9c.png" width="400">]() |  [<img src="" width="600">]()
 
-UC-07
-[<img src="https://user-images.githubusercontent.com/61986930/178091374-8fd69928-632e-46be-8cd9-80d43d7ad626.png" width="400">]()
 
-DC-08
+UC-07         |  UC-08
+:-------------------------:|:-------------------------:
+[<img src="https://user-images.githubusercontent.com/61986930/178091374-8fd69928-632e-46be-8cd9-80d43d7ad626.png" width="400">]() |  [<img src="" width="600">]()
 
-UC-09
-[<img src="https://user-images.githubusercontent.com/61986930/178091380-9d60232a-1cfe-4236-9862-5aa5e9dcb204.png" width="400">]()
+
+UC-09         |  UC-02
+:-------------------------:|:-------------------------:
+[<img src="https://user-images.githubusercontent.com/61986930/178091380-9d60232a-1cfe-4236-9862-5aa5e9dcb204.png" width="400">]() |  [<img src="" width="600">]()
+
 
 ### User stories Dict
 
