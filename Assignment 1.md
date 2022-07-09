@@ -89,6 +89,7 @@ comment block (not visible in final document)
 
 
 ## Use Cases
+[Use Cases Link](https://github.com/jlursenbach/CPSC-362-summer-group/blob/4-assignment-1/use_cases.md)
 
 UC-01         |  UC-02
 :-------------------------:|:-------------------------:
@@ -124,6 +125,7 @@ DC-09        |  -
 
 
 ## User Stories
+[User Stories Link](https://github.com/jlursenbach/CPSC-362-summer-group/blob/4-assignment-1/user-stories.md)
 
 UC-01         |  UC-02
 :-------------------------:|:-------------------------:
