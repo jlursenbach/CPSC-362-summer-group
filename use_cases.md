@@ -17,6 +17,26 @@
 }
 
 {
+"ID": "UC-2",
+"Name": "Return",
+"Description: "",
+"Primary Actor: "Developer",
+"Preconditions: [""],
+"Postconditions: [""],
+"Main Success Scenario (flow)": {1: ""} 
+}
+
+{
+"ID": "UC-3",
+"Name": "Return",
+"Description: "",
+"Primary Actor: "Developer",
+"Preconditions: [""],
+"Postconditions: [""],
+"Main Success Scenario (flow)": {1: ""} 
+}
+
+{
 "ID": "UC-4",
 "Name": "select specific stock from the list",
 "Description: "The user will select a stock, the data for that stock will be returned.",
@@ -50,16 +70,43 @@
 ```
 
 {
+"ID": "DC-6",
+"Name": "Provide a list of Dow Jones stocks",
+"Description: "The developer will get stock data from yahoo finance by using the yfinance python module.",
+"Primary Actor: "Developer",
+"Preconditions: ["yfinance is imported"],
+"Postconditions: ["list of Dow Jones Stocks stored or returned"],
+"Main Success Scenario (flow)": {1: "Use yfinance to grab a list of stocks on the Dow Jones",
+                                 2: "return list or store the list for recall on program"} 
+}
+- question: how often will the list need to be updated? this may affect how often this function is called, and whether storage of some type is required -
+
+{
 "ID": "DC-7",
 "Name": "get stock data from yahoo finance",
 "Description: "The developer will get stock data from yahoo finance by using the yfinance python module.",
 "Primary Actor: "Developer",
-"Preconditions: "yfinance is imported",
-"Postconditions: "stock data is retrieved",
-"Main Success Scenario (flow)": {1: "requiest for stock data sent with yFinance",
-                                 2: "data is returned in a json, .csv, or pydict",
-                                 3: "data is placed into the webpage or a temporary database for viewing or access"} 
+"Preconditions: ["yfinance is imported", 
+                 "Stock(s) are selected or provided as a parameter"],
+"Postconditions: ["stock data is returned"],
+"Main Success Scenario (flow)": {1: "stock for data to be returned is chosen",
+                                 2: "requiest for stock data sent with yFinance",
+                                 3: "data is returned in a json, .csv, or pydict",
+                                 4: "data is returned or placed into the product or a temporary database for viewing or access"} 
 }
+
+
+----- This was completed in other tasks -----|
+{
+"ID": "DC-8",
+"Name": "Return",
+"Description: "",
+"Primary Actor: "Developer",
+"Preconditions: [""],
+"Postconditions: [""],
+"Main Success Scenario (flow)": {1: ""} 
+}
+---------------------------------------------|
 
 {
 "ID": "DC-9",
