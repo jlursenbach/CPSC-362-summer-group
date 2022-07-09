@@ -1,6 +1,16 @@
 # Assignment #1
 Total score: 30
 Due date: 7/10
+
+## TEAM:
+```
+Olvin Bolanos
+Anthony Cao
+Thomas Tran
+Jacob Ursenbach
+Greg Zhang
+```
+
 ## Goals
 
 Analyzing customer requirements. Writing requirements for the users and developers using both
@@ -84,7 +94,8 @@ comment block (not visible in final document)
 	readability/understandability/organization
 	
 ### Developer
- 	Handle multiple users accessing system
+```
+```
 
 
 
@@ -113,7 +124,7 @@ DC-07         |  DC-08
 
 DC-09        |  -
 :-------------------------:|:-------------------------:
-[<img src="https://user-images.githubusercontent.com/61986930/178091351-3b625ee7-e229-4c73-88c9-e288c6185b4d.png" width="600">]() |  -
+[<img src="https://user-images.githubusercontent.com/61986930/178091351-3b625ee7-e229-4c73-88c9-e288c6185b4d.png" width="450">]() |  -
 
 
 ## User Stories
@@ -139,7 +150,7 @@ UC-07         |  UC-08
 [<img src="https://user-images.githubusercontent.com/61986930/178091374-8fd69928-632e-46be-8cd9-80d43d7ad626.png" width="400">]() |  [<img src="https://user-images.githubusercontent.com/61986930/178096346-1e797d1f-aa81-4477-b5c0-ce7712bef672.png" width="400">]()
 
 
-UC-09         |  UC-02
+UC-09         |  -
 :-------------------------:|:-------------------------:
 [<img src="https://user-images.githubusercontent.com/61986930/178091380-9d60232a-1cfe-4236-9862-5aa5e9dcb204.png" width="400">]() |  [<img src="" width="600">]()
 
