@@ -3,7 +3,7 @@
 
 ```
 {
-  "ID":"UC-2",
+  "ID":"UC-1",
   "Name": "Generate a List of Stocks",
   "Description": "User is provided with a complete list of stocks available on the Down Jones Index",
   "Primary Actor": "User",
