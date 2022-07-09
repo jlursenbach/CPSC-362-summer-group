@@ -18,4 +18,13 @@
 "Main Success Scenario (flow)": {"1: stock data is retrieved"0} 
 }
 
+{"ID": "AC-9",
+"Name": "Interactive Display System for Stock Data",
+"Description": The developer creates an interactive display system for Stock Data for the user",
+"Primary Actor": "Developer"
+"Preconditions": "Stock data is retrieved",
+"Postconditions": "Configuration of interactive display system for user", 
+"Main success scenario" : {1: "Chosen stock data is chosen to be implemented", 2: "The system configures a display system for chosen stock data", 3: Display system becomes available for user to interact with"}
+}
+
 ```
