@@ -8,6 +8,21 @@ Story 1
 "Description": "Upon loading the page or selecting a button, user will be provided with a complete list of Dow Jones stocks"
 }
 
+Story 2
+{
+"ID and Name": "",
+"Actor": "User",
+"Description": ""
+}
+
+Story 3
+{
+"ID and Name": "",
+"Actor": "User",
+"Description": ""
+}
+
+
 Story 4
 {
 "story id and name": "Select Specific stock from list",
@@ -25,12 +40,28 @@ Story 5
 
 # Developer Stories:
 ```
+Story 1
+{
+"ID and Name": "Get list of Stocks",
+"Actor": "User",
+"Description": "Return a list of stocks in the Dow Jones"
+}
+
+
 Story 7
 {
 "story id and name": "Get stock data",
 "Actor": "Developer",
 "Description" : "Get stock data using yfinance"
 }
+
+Story 8 - This one isn't needed --|
+{
+"ID and Name": "",
+"Actor": "User",
+"Description": ""
+} ---------------------------------|
+
 
 Story 9
 {
