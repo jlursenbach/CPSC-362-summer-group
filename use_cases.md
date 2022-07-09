@@ -1,6 +1,20 @@
 # Use Cases
 
+
 ```
+{
+  "ID":"UC-2",
+  "Name": "Select a List of Stocks",
+  "Description": "User is provided with a complete list of stocks available on the Down Jones Index",
+  "Primary Actor": "User",
+  "Preconditions": ["User has access to the page", 
+                    "User chooses to display the list of stocks by selecting button or opening page"],
+  "Postconditions": ["Visually populate a complete visual list of available stocks",
+                     "Manipulatable",
+                     "Selectable"],
+  "Main Success Scenario": {1: "User opens page or clicks "populate list" button",
+                            2: "User is provided a complete list of stocks to look through"}
+}
 
 {
 "ID": "UC-4",
@@ -58,5 +72,4 @@
                            2: "The system configures a display system for chosen stock data", 
                            3: Display system becomes available for user to interact with"}
 }
-
 ```
