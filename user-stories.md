@@ -52,7 +52,7 @@ Story 7
 {
 "story id and name": "Get stock data",
 "Actor": "Developer",
-"Description" : "Get stock data for stock using yfinance"
+"Description" : "Get stock data for given stock using yfinance"
 }
 
 Story 8 - This one isn't needed --|
