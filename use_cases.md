@@ -20,7 +20,7 @@
 "ID": "UC-2",
 "Name": "Return",
 "Description: "",
-"Primary Actor: "Developer",
+"Primary Actor: "User",
 "Preconditions: [""],
 "Postconditions: [""],
 "Main Success Scenario (flow)": {1: ""} 
@@ -30,7 +30,7 @@
 "ID": "UC-3",
 "Name": "Return",
 "Description: "",
-"Primary Actor: "Developer",
+"Primary Actor: "User",
 "Preconditions: [""],
 "Postconditions: [""],
 "Main Success Scenario (flow)": {1: ""} 
