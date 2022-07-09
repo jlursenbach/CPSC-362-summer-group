@@ -77,14 +77,20 @@ comment block (not visible in final document)
 ## Nonfunctional Requirements: 
 > not required for this assignment
 
-## User
+### User
 	Load the list within 3 seconds
 	return a complete list (no parts missing)
 	provide accurate data
 	readability/understandability/organization
 	
-## Developer
+### Developer
  	Handle multiple users accessing system
 
-	
+
+## Use Cases
+
+
+
+## User Stories
+
 
