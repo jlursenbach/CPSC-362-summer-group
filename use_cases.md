@@ -1,4 +1,4 @@
-'''
+```
 Template: 
 {{1 :
 {"Name": "get stock data from yahoo finance",
@@ -18,4 +18,4 @@ Template:
 "Post condtion": "User is able to view data related to the selected stock",
 "Main success scenario": {1: "User selects a stock from a list of stocks", 2: "system displays data related to selected stock"}
 }
-'''
+```
