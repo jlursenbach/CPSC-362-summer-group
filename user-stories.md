@@ -1,4 +1,4 @@
-
+```
 Story 1
 {"story id and name": "Get stock data",
 "Actor": "developer",
@@ -9,3 +9,4 @@ Story 2
 "Actor": "User",
 "Description": "Upon selecting a stock, the system will display data related to the selected stock"}
 
+```
