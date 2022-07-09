@@ -56,7 +56,7 @@
 "Primary Actor: "Developer",
 "Preconditions: "yfinance is imported",
 "Postconditions: "stock data is retrieved",
-"Main Success Scenario (flow)": {1: "requiest for stock data sent to yFinance with Rest API",
+"Main Success Scenario (flow)": {1: "requiest for stock data sent with yFinance",
                                  2: "data is returned in a json, .csv, or pydict",
                                  3: "data is placed into the webpage or a temporary database for viewing or access"} 
 }
