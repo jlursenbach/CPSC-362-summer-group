@@ -4,7 +4,7 @@
 ```
 {
   "ID":"UC-2",
-  "Name": "Select a List of Stocks",
+  "Name": "Generate a List of Stocks",
   "Description": "User is provided with a complete list of stocks available on the Down Jones Index",
   "Primary Actor": "User",
   "Preconditions": ["User has access to the page", 
