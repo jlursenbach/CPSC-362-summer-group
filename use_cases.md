@@ -1,5 +1,4 @@
 ```
-Template: 
 {{1 :
 {"Name": "get stock data from yahoo finance",
 "Description: "The developer will get stock data from yahoo finance by using the yfinance python module."
