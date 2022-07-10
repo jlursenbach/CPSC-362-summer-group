@@ -81,7 +81,7 @@ comment block (not visible in final document)
 
 ** Functional **
 
-	scrape stock data from - somewhere -
+	scrape stock data from - (yahoo_fin library is completely free open source library)
 	grab stock metadata from - somewhere - (Yahoo stocks?)
 
  ** Nonfunctional **
