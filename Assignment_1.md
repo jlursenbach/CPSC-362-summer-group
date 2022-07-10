@@ -120,9 +120,7 @@ DC-07         |  DC-08
 :-------------------------:|:-------------------------:
 [<img src="https://user-images.githubusercontent.com/61986930/178091344-a42be2b0-cff1-436a-becf-35005db22003.png" width="600">]() |  [<img src="https://user-images.githubusercontent.com/61986930/178096354-dbd4aaaa-9fb2-4fb0-83eb-b994c2d209f2.png" width="600">]()
 
-DC-09        |  -
-:-------------------------:|:-------------------------:
-[<img src="https://user-images.githubusercontent.com/61986930/178091351-3b625ee7-e229-4c73-88c9-e288c6185b4d.png" width="450">]() |  -
+> DC-09 removed due to not fitting within the confines of the assignment
 
 
 ## User Stories
@@ -145,7 +143,5 @@ UC-07         |  UC-08
 :-------------------------:|:-------------------------:
 [<img src="https://user-images.githubusercontent.com/61986930/178091374-8fd69928-632e-46be-8cd9-80d43d7ad626.png" width="400">]() |  [<img src="https://user-images.githubusercontent.com/61986930/178096346-1e797d1f-aa81-4477-b5c0-ce7712bef672.png" width="400">]()
 
-UC-09         |  -
-:-------------------------:|:-------------------------:
-[<img src="https://user-images.githubusercontent.com/61986930/178091380-9d60232a-1cfe-4236-9862-5aa5e9dcb204.png" width="400">]() |  [<img src="" width="600">]()
+> DC-09 removed due to not fitting within the confines of the assignment
 
