@@ -2,7 +2,7 @@
 Project Repo for Summer Software Engineering Project
 
 ## [ASSIGNMENT 1](https://github.com/jlursenbach/CPSC-362-summer-group/blob/main/Assignment%201.md)
-Professor feedback:
+### [Professor feedback for Assignent 1:](https://github.com/jlursenbach/CPSC-362-summer-group/blob/main/Assignment%201%20Feedback.md)
 
 
 
