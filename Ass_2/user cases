@@ -1,0 +1,80 @@
+user cases
+
+
+name: display buy and sell strategy
+
+
+Description: After the user selects a stock for analysis. The system will provide buy and sell strategies for the user.
+
+
+Primary actor: user
+
+
+Pre-conditions: user has selected a stock for analysis
+
+
+Post conditions: User chooses buy and sell strategies provided by the system.
+
+
+Main success scenario: 
+1. System processes data gathered from the selected stock to determine the appropriate buy and sell strategies from a list initialized with buy and sell strategies
+2. The system will then display the buy and sell strategies to the user
+3. The user chooses a buy and sell strategy
+
+
+
+
+
+
+
+
+name: create tentative portfolio
+
+
+description: The user creates a tentative portfolio containing stocks they have selected along with their corresponding buy and sell strategies.
+
+
+Primary actor: user
+
+
+pre-conditions: User has selected a stock for analysis, as well as choosing a buy and sell strategy for that stock that was provided by the system.
+
+
+post conditions: The user is able to store the selected stock and strategy inside a portfolio.
+
+
+Main success scenario:
+1. User selects an option to create a tentative portfolio
+2. The system will create an empty portfolio
+3. User chooses stocks and strategies to store inside the portfolio
+4. The system will store the selected stocks and corresponding strategies inside the portfolio
+5. system will save the portfolio to a txt file that can be retrieved by both system and user.
+
+
+
+
+user stories
+
+
+name: display buy and sell strategies
+
+
+actor: user
+
+
+description: System processes the data gathered from the selected stock to appropriate the correct buy and sell strategies. The buy and sell strategies will be selected from a list containing multiple buy and sell strategies. The system will then display the selected buy and sell strategies for the use to choose.
+
+
+
+
+
+
+
+
+name: create tentative portfolio
+
+
+actor: user
+
+
+description: The user is given the option to create a tentative portfolio to store all of their selected stocks and corresponding strategies. The system will create a list and store the selected stocks and their corresponding strategies in a dictionary which will be loaded into the list. The user will be able to access the list and view its contents.
