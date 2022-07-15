@@ -52,11 +52,6 @@ Main success scenario:
 
 
 
-
-
-
-
-
 name: create tentative portfolio
 
 
@@ -85,6 +80,14 @@ Main success scenario:
 user stories
 
 
+{
+  "Name": "Return Stock Data",
+  "Primary Actor": "User",
+  Description:
+    "User inputs a valid stock symbol into a text box. User presses return or     selects a button that activates the text box. The system uses the stock symbol to call yFinance app and return stock data in a JSON. System will display the stock data"
+}
+
+
 name: display buy and sell strategies
 
 
@@ -92,9 +95,6 @@ actor: user
 
 
 description: System processes the data gathered from the selected stock to appropriate the correct buy and sell strategies. The buy and sell strategies will be selected from a list containing multiple buy and sell strategies. The system will then display the selected buy and sell strategies for the use to choose.
-
-
-
 
 
 
