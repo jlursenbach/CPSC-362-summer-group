@@ -7,7 +7,12 @@ class getStockData:
         self.stockSymbol = symbol
         self.stockData = {"stock_symbol": {"Product": None, "Opening Price": None, "Closing Price": None, "PE_ratio": None,
                           "PS_ratio": None, "Company_Cash_Reserve": None, "Company_Debt": None,
-                          "bid": None, "volume": "", "ask": None}}
+                          "Bid": None, "Volume": "", "Ask": None}}
+
+    def output(self):
+        for i in self.stockData["stock_symbol"]:
+            print(f'{i}: {self.stockData["stock_symbol"][i]}')
+
 
     def retrieveData(self):
         getInfo = yfinance.Ticker(self.stockSymbol)
@@ -15,12 +20,12 @@ class getStockData:
 
         self.stockData["stock_symbol"]["Product"] = getInfo.info["longBusinessSummary"]
         self.stockData["stock_symbol"]["Company_Cash_Reserve"] = getInfo.info["totalCash"]
-        self.stockData["Company_Debt"] = getInfo.info["totalDebt"]
+        self.stockData["stock_symbol"]["Company_Debt"] = getInfo.info["totalDebt"]
 
         self.stockData["stock_symbol"]["Opening Price"] = getInfo2["Open"]
-        self.stockData["stock_symbol"]["bid"] = getInfo2["Bid"]
-        self.stockData["stock_symbol"]["volume"] = getInfo2["Volume"]
-        self.stockData["stock_symbol"]["ask"] = getInfo2["Ask"]
+        self.stockData["stock_symbol"]["Bid"] = getInfo2["Bid"]
+        self.stockData["stock_symbol"]["Volume"] = getInfo2["Volume"]
+        self.stockData["stock_symbol"]["Ask"] = getInfo2["Ask"]
         self.stockData["stock_symbol"]["Closing Price"] = getInfo2["Previous Close"]
         self.stockData["stock_symbol"]["PE_ratio"] = getInfo2["PE Ratio (TTM)"]
 
@@ -36,7 +41,8 @@ class getStockData:
 def main():
     obj1 = getStockData("FB")
     obj1.retrieveData()
-    print(obj1.stockData)
+    obj1.output()
+    #print(obj1.stockData)
 
 
 if __name__ == "__main__":
