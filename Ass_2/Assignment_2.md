@@ -162,7 +162,7 @@ class testCase(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 ```
-[testCase1.png](testCase1.png)
+![testCase1.png](testCase1.png)
 
 
 # Acceptance criteria 
