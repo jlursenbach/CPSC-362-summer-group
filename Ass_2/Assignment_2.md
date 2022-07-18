@@ -197,9 +197,9 @@ This class will allow the user to create a tentative portfolio where the user ca
 ### 4. Create a class or module diagram. You can use actual paper or a whiteboard to draw the 
 diagram. You don’t need to use any UML tool to draw a diagram, although you are welcome 
 to do it. 
-```
 
-```
+![image](https://user-images.githubusercontent.com/61986930/179449357-5ac0aae7-a0f7-4543-9816-184337fe9512.png)
+
 ### 5. Implement the feature (a) with at least one test case. ** No visual user interface is necessary. ** 
 To get the data, use a free package, e.g., “yfinance” in Python, “yahoo-finance” in 
 JavaScript, etc., or implement one yourself.  
