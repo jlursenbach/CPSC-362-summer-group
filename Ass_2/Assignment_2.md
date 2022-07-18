@@ -326,7 +326,7 @@ class testCase(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 ```
-![testCase1_2.png](testCase1.png)
+![testCase1_2.png](testCase1_2.png)
 
 ![testCase2.png](testCase2.png)
 
