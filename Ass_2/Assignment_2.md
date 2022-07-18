@@ -138,6 +138,7 @@ if __name__ == "__main__":
         self.stockData["ask"] = getInfo.info["ask"]
         self.stockData["close"] = getInfo.info["regularMarketPreviousClose"]"""
 ```
+
 stockDataTest.py
 ```
 lines (14 sloc)  505 Bytes
@@ -162,8 +163,9 @@ class testCase(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 ```
-![testCase1.png](testCase1.png)
+[testCase1.png](testCase1.png)
 
+[testCase2.png](testCase2.png)
 
 # Acceptance criteria 
 A list of all the necessary use cases or user stories and CRC cards in the format discussed in class 
