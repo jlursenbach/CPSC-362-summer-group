@@ -19,9 +19,7 @@ or module design, beginning development
 
 ### 1. Analyze all the features of the system specified in the project description document and 
 identify all the requirements to implement the features. 
-```
 
-```
 ### 2. Write all the necessary use cases or user stories to implement the feature (a) of the system. 
 See assignment #1 for feature (a).  
 ```
