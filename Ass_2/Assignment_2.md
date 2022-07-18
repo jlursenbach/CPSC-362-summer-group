@@ -225,13 +225,13 @@ import yfinance
 import yahoo_fin.stock_info as stockInfo
 
 
-class getStockData:
+class StockData:
     def __init__(self, symbol: str = None):
         """
         :param symbol:
         """
-        self.stock_symbol = None
-        self.stock_data = {"Opening Price": None, "Closing Price": None, "PE_ratio": None,
+        self.stockSymbol = None
+        self.stockData = {"Opening Price": None, "Closing Price": None, "PE_ratio": None,
                           "PS_ratio": None, "Company_Cash_Reserve": None, "Company_Debt": None,
                           "bid": None, "volume": "", "ask": None}
 
@@ -239,12 +239,24 @@ class getStockData:
             self.set_symbol(symbol)
             self.retrieveData()
 
+    def __str__(self):
+        output = ""
+        for key, value in self.stockData.items():
+            output += f'{key}: {value}' + '\n'
+
+        return output
+
     def retrieveData(self):
         """
         :return:
         """
-        getInfo = yfinance.Ticker(self.stockSymbol)
-        getInfo2 = stockInfo.get_quote_table(self.stockSymbol)
+
+        try:
+            getInfo = yfinance.Ticker(self.stockSymbol)
+            getInfo2 = stockInfo.get_quote_table(self.stockSymbol)
+
+        except Exception:
+            return None
 
         self.stockData["Company_Cash_Reserve"] = getInfo.info["totalCash"]
         self.stockData["Company_Debt"] = getInfo.info["totalDebt"]
@@ -271,34 +283,35 @@ class getStockData:
         """
         self.stockSymbol = symbol
 
-    def return_data(self):
+    def return_data(self) -> dict:
         """
         :return:
         """
         return {self.stockSymbol: self.stockData}
 
-    def scrape_stock(self, symbol: str) -> str:
+    def scrape_stock(self, symbol: str) -> dict:
         """
         :param symbol:
         :return:
         """
 
+        self.set_symbol(symbol)
+        self.retrieveData()
+        return self.return_data()
+
+
+
 
 def main():
-    scraper = getStockData("FB")
-    scraper.retrieveData()
-    print(scraper.return_data())
+    scraper = StockData()
+    scraper.scrape_stock("amzn")
+    print(scraper)
+
+
 
 
 if __name__ == "__main__":
     main()
-
-"""self.stockData["open"] = getInfo.info["open"]
-        self.stockData["bid"] = getInfo.info["bid"]
-        self.stockData["volume"] = getInfo.info["volume"]
-        self.stockData["ask"] = getInfo.info["ask"]
-        self.stockData["close"] = getInfo.info["regularMarketPreviousClose"]"""
-```
 
 stockDataTest.py
 ```
