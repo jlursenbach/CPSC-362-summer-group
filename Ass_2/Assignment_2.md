@@ -24,67 +24,80 @@ identify all the requirements to implement the features.
 ```
 ### 2. Write all the necessary use cases or user stories to implement the feature (a) of the system. 
 See assignment #1 for feature (a).  
-
-Use Cases
 ```
-ID: DC-1
+# Use Cases
 
-name: Return Stock Data
+## ID: DC-1
 
-description: The user supplies the system a valid stock symbol, upon which the system returns data for the given stock
+### name: 
+Return Stock Data
 
-Primary Actor: User
+### description: 
+The user supplies the system a valid stock symbol, upon which the system returns data for the given stock
 
-preconditions: 
+### Primary Actor: 
+User
+
+### preconditions: 
 1. User has a stock symbol to supply to the system
 2. User has access to the system
 3. yfinance module is imported on the system
 
-postconditions: 
+### postconditions: 
 stock data is retrieved and displayed for the user
 
-main success scenario:
+### main success scenario:
 1. User inputs a valid stock symbol
 2. The system uses the stock symbol to retrieve stock data from yahoo finance
 3. the system will display the stock data for the user
 
-_________________________________
-ID: DC-2
 
-name: Get back testing results
+## ID: DC-2
 
-Description: 
+### name: 
+Get back testing results
+
+### Description: 
 After the user selects a stock for analysis. The system will provide a list of buy and sell strategies for the user to choose. Afterwards, the system will conduct back testing based on the stock and strategy the user chose and display the results to the user.
 
-Primary actor: user
 
-Pre-conditions: 
+### Primary actor: 
+user
+
+### Pre-conditions: 
 user has selected a stock for analysis
 
-Post conditions: 
+### Post conditions: 
 User chooses buy and sell strategies provided by the system.
 
-Main success scenario: 
+### Main success scenario: 
 1. The system allows the user to select a stock.
 2. The system will then display the buy and sell strategies to the user to select.
 3. User will click the button to start back testing.
 4. system will conduct back testing
 5. System will display backtesting results to the user
 
-______________________________
-ID: DC-3
-name: create tentative portfolio
 
-description: The user creates a tentative portfolio containing stocks they have selected along with their corresponding buy and sell strategies.
 
-Primary actor: user
 
-pre-conditions: 
+## ID: DC-3
+
+### name: 
+create tentative portfolio
+
+### description: 
+The user creates a tentative portfolio containing stocks they have selected along with their corresponding buy and sell strategies.
+#
+## Primary actor: 
+user
+
+### pre-conditions: 
 User has selected a stock for analysis, as well as choosing a buy and sell strategy for that stock that was provided by the system.
 
-post conditions: The user is able to store the selected stock and strategy inside a portfolio.
+### post conditions: 
+The user is able to store the selected stock and strategy inside a portfolio.
 
-Main success scenario:
+### Main success scenario:
 1. User selects an option to create a tentative portfolio
 2. The system will create an empty portfolio
 3. User chooses stocks, backtesting results, and strategy name to store inside the portfolio
@@ -92,76 +105,92 @@ Main success scenario:
 5. system will save the portfolio that can be retrieved by both system and user.
 
 
+
+# user stories
+
+### ID: BC-1
+
+### name: 
+Return Stock Data
+
+### Actor:
+user
+
+### description: 
+User inputs valid stock symbol, the system will then gather data from yahoo finance corresponding to the given stock and display the data for the user.
+
+
+## ID: BC-2
+
+### name: 
+Get Back Testing Results
+
+### actor: 
+user
+
+### description: 
+The system will conduct backtesting on the given stock and strategy that the user chose. The results will be displayed for the user.
+
+
+## ID: BC-3
+
+### name: 
+create tentative portfolio
+
+### actor: 
+user
+
+### description: 
+The user creates a tentative portfolio containing stocks they have selected along with their corresponding buy and sell strategies.
+
 ```
-USER STORIES
-```
-_______________________________
-ID: BC-1
-name: Return Stock Data
-Actor:user
-description: User inputs valid stock symbol, the system will then gather data from yahoo finance corresponding to the given stock and display the data for the user.
-
-_______________________________
-ID: BC-2
-name: Get Back Testing Results
-actor: user
-description: The system will conduct backtesting on the given stock and strategy that the user chose. The results will be displayed for the user.
-
-________________________________
-ID: BC-3
-name: create tentative portfolio
-actor: user
-description: The user creates a tentative portfolio containing stocks they have selected along with their corresponding buy and sell strategies.
-
-```
-
 ### 3. Create all the necessary CRC cards.  
 ```
-______________________________________________
-Class: GetStockData
+## Class: GetStockData
 
-Description: 
+### Description: 
 This class takes a stock symbol as a parameter. It will then retrieve detailed information about the stock from yahoo finance and display it to the user. 
 
-Responsibilities:
+### Responsibilities:
 1. Get stock data from yahoo finance
 2. store data in JSON
 3. display data to user??
 
-Collaborators:
+### Collaborators:
 1. BackTesting
 2. CreateTentativePortfolio
 
-_______________________________________________
-Class: BackTesting
 
-Description: 
+## Class: BackTesting
+
+### Description: 
 This class will conduct backtesting based on the given stock and strategy the user chooses. Afterwards, it will display the results to the user.
 
-Responsibilities:
+
+### Responsibilities:
 1. Allows the user to select a stock.
 2. Display buy and sell strategies for the use to choose
 3. Allows the user to click a button to start backtesting
 4. conducts backtesting on the selected stock
 5. Display backtesting result to the user
 
-Collaborators:
+### Collaborators:
 1. GetStockData
 2. CreateTentativePortfolio
 
-_______________________________________________
-Class CreateTentativePortfolio
 
-Description: 
+## Class CreateTentativePortfolio
+
+### Description: 
 This class will allow the user to create a tentative portfolio where the user can store their selected stocks along with their corresponding buy and sell strategies.
 
-Responsibilities:
+### Responsibilities:
 1. Take user input to create a portfolio
 2. Define an empty data structure that will serve as the portfolio
 3. Store user-selected stock, and corresponding data inside portfolio
 4. save portfolio so that it can be read and retrieved
 
-Collaborators:
+### Collaborators:
 1. BackTesting
 2. GetStockData
 ```
@@ -297,7 +326,7 @@ class testCase(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 ```
-![testCase1.png](testCase1.png)
+![testCase1.png](testcase1_2.png)
 
 ![testCase2.png](testCase2.png)
 
