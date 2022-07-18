@@ -18,10 +18,10 @@ user cases
                 "Stock data is retrieved and displayed to the user"
             ],
 "main success scenario": {
-                        1: User inputs a valid stock symbol into a text box
-                        2: User presses return or selects a button that activates the text box
-                        3: The system uses the stock symbol to call yFinance app and return stock data in a JSON
-                        4: System will display the stock data
+                        1: "User inputs a valid stock symbol into a text box"
+                        2: "User presses return or selects a button that activates the text box"
+                        3: "The system uses the stock symbol to call yFinance app and return stock data in a JSON"
+                        4: "System will display the stock data"
                        }
 }
 
@@ -29,16 +29,16 @@ user cases
 {
 "name": Get back testing results
 
-"description": After the user selects a stock for analysis. The system will provide a list of buy and sell strategies for the user to choose. Afterwards, the system will conduct back testing based on the stock and strategy the user chose and display the results to the user.
+"description": "After the user selects a stock for analysis. The system will provide a list of buy and sell strategies for the user to choose. Afterwards, the system will conduct back testing based on the stock and strategy the user chose and display the results to the user."
 
-"primary actor": user
+"primary actor": "user"
 
 "pre-conditions": [
-        User has selected a stock for analysis
+        "User has selected a stock for analysis"
             ]
 
 "post conditions": [
-            User chooses buy and sell strategies provided by the system.
+            "User chooses buy and sell strategies provided by the system."
             ]
 
 "main success scenario": {
@@ -81,20 +81,20 @@ user stories
 {
   "name": "Return Stock Data",
   "actor": "User",
-  "description": "User inputs a valid stock symbol into a text box. User presses return or     selects a button that activates the text box. The system uses the stock symbol to call yFinance app and return stock data in a JSON. System will display the stock data"
+  "description": "User inputs a valid stock symbol into a text box. User presses return or selects a button that activates the text box. The system uses the stock symbol to call yFinance app and return stock data in a JSON. System will display the stock data"
 }
 
 
 {
-"name": display buy and sell strategies
-"actor": user
-"description": System processes the data gathered from the selected stock to appropriate the correct buy and sell strategies. The buy and sell strategies will be selected from a list containing multiple buy and sell strategies. The system will then display the selected buy and sell strategies for the use to choose.
+"name": "display buy and sell strategies"
+"actor": "user"
+"description": "System processes the data gathered from the selected stock to appropriate the correct buy and sell strategies. The buy and sell strategies will be selected from a list containing multiple buy and sell strategies. The system will then display the selected buy and sell strategies for the use to choose."
 }
 
 
 
 {
-"name": create tentative portfolio
-"actor": user
-"description": The user is given the option to create a tentative portfolio to store all of their selected stocks and corresponding strategies. The system will create a list and store the selected stocks and their corresponding strategies in a dictionary which will be loaded into the list. The user will be able to access the list and view its contents.
+"name": "create tentative portfolio"
+"actor": "user"
+"description": "The user is given the option to create a tentative portfolio to store all of their selected stocks and corresponding strategies. The system will create a list and store the selected stocks and their corresponding strategies in a dictionary which will be loaded into the list. The user will be able to access the list and view its contents."
 }
