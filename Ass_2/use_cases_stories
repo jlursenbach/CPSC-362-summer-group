@@ -46,7 +46,8 @@ user cases
                         2: "The system will then display the buy and sell strategies to the user to select."
                         3: "User will click the button to start back testing."
                         4: "system will conduct back testing"
-                        5: "System will display backtesting results to the user"}
+                        5: "System will display backtesting results to the user"
+                        }
 {
 
 {
@@ -71,7 +72,8 @@ Main success scenario: {
                         3: "User chooses stocks, backtesting results, and strategy name to store inside the portfolio"
                         4: "The system will store the selected stocks and corresponding data inside the portfolio"
                         5: "system will save the portfolio that can be retrieved by both system and user."
-}}
+                        }
+}
 
 
 
