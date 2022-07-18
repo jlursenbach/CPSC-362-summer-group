@@ -1,0 +1,12 @@
+
+#reset the path for this if not using on my laptop
+from pythonProjects.stockProgram.getStockData import StockData
+
+obj = StockData("8")
+obj.retrieveData()
+print(obj)
+
+
+for key, value in obj.stockData.items():
+    if value == None:
+        print(f'expected value for {key} a float, instead got None')
