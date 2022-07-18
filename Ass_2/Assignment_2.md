@@ -163,9 +163,9 @@ class testCase(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 ```
-[testCase1.png](testCase1.png)
+![testCase1.png](testCase1.png)
 
-[testCase2.png](testCase2.png)
+![testCase2.png](testCase2.png)
 
 # Acceptance criteria 
 A list of all the necessary use cases or user stories and CRC cards in the format discussed in class 
