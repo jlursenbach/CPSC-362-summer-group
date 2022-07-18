@@ -26,8 +26,8 @@ class getStockData:
 
         :param symbol:
         """
-        self.stockSymbol = None
-        self.stockData = {"Opening Price": None, "Closing Price": None, "PE_ratio": None,
+        self.stock_symbol = None
+        self.stock_data = {"Opening Price": None, "Closing Price": None, "PE_ratio": None,
                           "PS_ratio": None, "Company_Cash_Reserve": None, "Company_Debt": None,
                           "bid": None, "volume": "", "ask": None}
 
