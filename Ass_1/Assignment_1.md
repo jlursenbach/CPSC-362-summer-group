@@ -1,6 +1,16 @@
 # Assignment #1
 Total score: 30
 Due date: 7/10
+
+## TEAM:
+```
+Olvin Bolanos
+Anthony Cao
+Thomas Tran
+Jacob Ursenbach
+Greg Zhang
+```
+
 ## Goals
 
 Analyzing customer requirements. Writing requirements for the users and developers using both
@@ -34,64 +44,65 @@ through the project life cycle.
 | note: (we need to run our assignment through prof. before submission. I am listening to him pull apart people's ideas.
 > **“Customers select a stock from the Dow Jones index for detailed information about the stock for analysis.”.** 
 
-## Requrements: 
+# Requrements: 
 
 <!--- 
 comment block (not visible in final document)
+
 --->
 
+## Functional Requirements: 
+	
+### USER:
+	1.) Supply a stock symbol
+	2.) View stock data 
+		- the product that the company sells
+		- product popularity (consumer needs)
+		- stock price trend chart 
+		       (chart should show company performance up to 5 years)
+		- opening and closing prices
+		- PE ratio (price per earning)
+		- PS ratio (price per share)
+		- company cash reserve
+		- company debt
+		- company management effectiveness data 
+				(return on asset and return on equity data)
+
+### DEVELOPER:
+	3.) Get stock data from yFinance
+	  	- is there a REST API for this?
+  		- https://algotrading101.com/learn/yahoo-finance-api-guide/
+	4.) Display the stock data
+		- display info from a py-dict or .json
+		- create a number of frames
+		- display info in a respective frame
+		- scroll, filter, select
+		
+## Nonfunctional Requirements: 
+> not required for this assignment
 
 ### User
-
-** Functional **
-
-	Select a list of stocks
-	Choose a stock to display  
-	Sort Stocks 
-		Sort by:
-			-
-			-
-			-
-	Stock Meta-Data
-		-the product that the company sells
-		-product popularity (consumer needs)
-		-gstock price trend chart (chart should show company performance up to 5 years)
-		-PE ratio (price per earning)
-		-PS ratio (price per share)
-		-company cash reserve
-		-company debt
-		-company management effectiveness data 
-			(return on asset and return on equity data)
-
-	Comparing Stocks !!! (JU) I'm not sure this is required for the task?
-	Comparative analysis (two+ stocks) !!! (JU) I'm not sure this is required for the task?
-
-!!! (JU) The task is: Customers select a stock from the Dow Jones index for detailed information.  
-
-
- ** Nonfunctional ** 
-
 	Load the list within 3 seconds
 	return a complete list (no parts missing)
 	provide accurate data
 	readability/understandability/organization
 	
-
 ### Developer
+```
+```
 
-** Functional **
 
+<<<<<<< HEAD:Assignment 1.md
 	scrape stock data from - (yahoo_fin library is completely free open source library)
 	grab stock metadata from - somewhere - (Yahoo stocks?)
+=======
+## Use Cases
+![image](https://user-images.githubusercontent.com/61986930/178638910-8f879175-a7d4-49ae-b1f7-d8ecb4984b42.png)
+>>>>>>> main:Ass_1/Assignment_1.md
 
- ** Nonfunctional **
- 
- 	Handle multiple users accessing system
-	
- 
 
-## User Cases
+## User Stories
 
-	a button that displays all of the stocks
-	click on a stock to look at individual data
-	select 2 stocks 
+![image](https://user-images.githubusercontent.com/61986930/178638942-8f6a8ecc-bbac-490b-8fb2-2707019baaab.png)
+
+

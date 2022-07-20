@@ -1,0 +1,56 @@
+Class: GetStockData
+
+
+Description:
+
+
+Responsibilities:
+        
+1. Get stock data from yahoo finance
+2. store data in dict
+3. display data to user
+
+
+Collaborators:
+1. GetBuySellStrategies
+2. CreateTentativePortfolio
+
+
+
+
+Class: GetBuySellStrategies
+
+
+Description
+
+
+Responsibilities:
+1. Define a list containing multiple buy and sell strategies
+2. Determines the appropriate buy and sell strategies for the given stock
+3. Displays buy and sell strategies to the user
+4. lets  the user choose which buy and sell strategy they prefer.
+
+
+Collaborators:
+1. GetBuySellStrategies
+2. CreateTentativePortfolio
+
+
+
+
+Class CreateTentativePortfolio
+
+
+Description:
+
+
+Responsibilities:
+1. Take user input to create a portfolio
+2. Define an empty list that will serve as the portfolio
+3. Store user-selected stock, and corresponding buy and sell strategies inside a dictionary which will be stored inside of the list.
+4. save portfolio to a text file that can be read and retrieved
+
+
+Collaborators:
+1. GetBuySellStrategies
+2. GetStockData

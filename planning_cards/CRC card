@@ -1,0 +1,27 @@
+{
+Class: get stock data
+
+Description: a class that gets data for a Dow Jones stock symbol from the market 
+
+Responsibility: 
+	action - 	
+		-	get data from the stock market
+		-	 get user input
+	information - 
+		- the product that the company sells
+		- product popularity (consumer needs)
+		- stock price trend chart 
+	       (chart should show company performance up to 5 years)
+		- opening and closing prices
+		- PE ratio (price per earning)
+		- PS ratio (price per share)
+		- company cash reserve
+		- company debt
+		X company management effectiveness data 
+			(return on asset and return on equity data)
+				
+Collaborator: 
+	- yahooFinance - 
+	- visualization -
+	- JSON -
+}
