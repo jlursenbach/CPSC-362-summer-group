@@ -92,13 +92,8 @@ comment block (not visible in final document)
 ```
 
 
-<<<<<<< HEAD:Assignment 1.md
-	scrape stock data from - (yahoo_fin library is completely free open source library)
-	grab stock metadata from - somewhere - (Yahoo stocks?)
-=======
 ## Use Cases
 ![image](https://user-images.githubusercontent.com/61986930/178638910-8f879175-a7d4-49ae-b1f7-d8ecb4984b42.png)
->>>>>>> main:Ass_1/Assignment_1.md
 
 
 ## User Stories
