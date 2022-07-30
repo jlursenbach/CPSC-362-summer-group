@@ -1,22 +1,30 @@
 from backtesting import Backtest, Strategy
 from backtesting.lib import crossover
 import pandas as pd
-
+import pandas_datareader as pdr
 from backtesting.test import SMA, GOOG
+
 
 class startBackTesting:
     def __init__(self):
+        self.strategyName = ""
         self.historicalData = pd.DataFrame()
 
-    def getBackTestingResults(self, dataFrame):
-        self.setDataFrame(dataFrame)
-        self.bt = Backtest(self.historicalData, SmaCross,
+    def getData(self):
+        strategy = ""
+        if self.strategyName == "SmaCross":
+            strategy = SmaCross
+        self.bt = Backtest(self.historicalData, strategy,
                            cash=10000, commission=.002,
                            exclusive_orders=True)
 
+    def setStratName(self, name):
+        self.strategyName = name
 
-    def setDataFrame(self, dataFrame):
-        self.historicalData = dataFrame
+    def setHistoricalData(self, data):
+        self.historicalData = data
+
+
 
 
 class SmaCross(Strategy):
