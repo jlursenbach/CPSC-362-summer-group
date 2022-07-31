@@ -5,6 +5,8 @@ from pythonProjects.stockProgramV3.getHistoricalData import retrieveHistoricalDa
 from pythonProjects.stockProgramV3.baseClass import stockProgram
 
 
+def adapterGetData(obj):
+    obj.getData()
 
 def interfaceGetData(obj, symbol):
     obj.setSymbol(symbol)
@@ -13,12 +15,14 @@ def interfaceGetData(obj, symbol):
 
 def interfaceBackTest(obj, strat, historicalData):
     obj.setStratName(strat)
+    #obj.setStrat()
     obj.setHistoricalData(historicalData)
-    obj.getData()
+    #obj.getData()
 
 def interfaceCreatePortfolio(obj, fileName):
     obj.setPortfolio()
     obj.savePortfolio(fileName)
+
 
 def interfaceUpdatePortfolio(obj, fileName, symbol, data, strategy = ""):
     obj.loadPortfolio(fileName)
@@ -47,12 +51,27 @@ def main():
 
 
 
-    help = "lookup <stock symbol>           gets data for selected stock\n" \
-           "createPortfolio <file name>     creates a portfolio\n" \
-           "update <file name>              add stock data to a portfolio after lookup\n" \
-           "load <file name>                loads a portfolio and displays it's contents\n" \
-           "exit                            exits program\n" \
-           "clear                           clears screen\n"
+    help = "lookup <stock symbol>\n" \
+           "description: gets data for selected stock\n\n" \
+           "createPortfolio <file name>\n" \
+           "description: creates a portfolio\n\n" \
+           "backtest <stock symbol> <strategy>\n"\
+           "        strategies: SmaCross, Rsi\n"\
+           "example: backtest GOOG SmaCross\n"\
+           "descrtiption: backtest a stock with strategy\n\n" \
+           "update <file name> <stock symbol> <optional: -bd -bt>\n"\
+           "        -bd: load basic data for stock into portfolio\n" \
+           "        -bt: load backtest results for stock int portfolio\n" \
+           "example: update test1 GOOG -bd\n"\
+           "example: update test1 GOOG -bt\n"\
+           "example: update test1 GOOG -bd -bt\n"\
+           "description: add stock data to a portfolio\n\n"\
+           "load <file name>\n" \
+           "description: loads a portfolio and displays it's contents\n\n" \
+           "exit\n" \
+           "description: exits program\n\n" \
+           "clear\n" \
+           "description: clears screen\n"
 
 
     while True:
@@ -79,6 +98,7 @@ def main():
             #conducting back testing
             interfaceGetData(histData, cmd[1])
             interfaceBackTest(backtesting, cmd[2], histData.historicalData)
+            adapterGetData(backtesting)
             print("back testing results: ")
             print(backtesting.bt.run())
             print()
