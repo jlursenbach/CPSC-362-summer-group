@@ -79,18 +79,18 @@ class rsiOscillator(Strategy):
         elif crossover(self.lower, self.rsi):
             self.buy()
 
-def decoratorInputAmountToInvest(method):
+"""def decoratorInputAmountToInvest(method):
     def wrapper(self):
         self.amountToInvest = int(input("input amount to invest: "))
 
         method(self)
 
-    return wrapper
+    return wrapper"""
 
 class DCA(Strategy):
 
     amountToInvest = 10
-    @decoratorInputAmountToInvest
+    #@decoratorInputAmountToInvest
     def init(self):
 
         self.dayOfTheWeek = self.I(lambda x: x, self.data.Close.s.index.dayofweek)
