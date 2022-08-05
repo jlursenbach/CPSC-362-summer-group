@@ -1,6 +1,6 @@
 import requests, json
 
-class getBasicStockData():
+class GetBasicStockData():
     def __init__(self):
         self.stockData = {}
         self.stockSymbol = ""
