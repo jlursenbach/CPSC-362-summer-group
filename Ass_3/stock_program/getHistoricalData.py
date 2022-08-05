@@ -2,7 +2,7 @@ import pandas as pd
 import pandas_datareader as pdr
 import datetime as dt
 
-class retrieveHistoricalData:
+class RetrieveHistoricalData:
     def __init__(self):
         self.historicalData = pd.DataFrame()
         self.stockSymbol = ""
@@ -10,7 +10,7 @@ class retrieveHistoricalData:
     def getData(self):
         """getting historical stock data
                 for the back testing module"""
-        start = dt.datetime(2022, 4, 19)
+        start = dt.datetime(2019, 4, 19)
         end = dt.datetime(2022, 7, 22)
 
         self.historicalData = pdr.get_data_yahoo(self.stockSymbol, start, end)
