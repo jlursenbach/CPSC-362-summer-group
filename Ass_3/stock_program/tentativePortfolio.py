@@ -1,6 +1,6 @@
 import pickle
 
-class tentative_Portfolio():
+class Tentative_Portfolio():
     def __init__(self):
         self.portfolio = {}
         self.stockSymbol = ""
