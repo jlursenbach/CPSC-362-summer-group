@@ -1,23 +1,29 @@
-from pythonProjects.stockProgramV3.pullBasicStockData import getBasicStockData
-from pythonProjects.stockProgramV3.back_testing import startBackTesting
-from pythonProjects.stockProgramV3.tentative_portfolio import tentative_Portfolio
-from pythonProjects.stockProgramV3.getHistoricalData import retrieveHistoricalData
+from pythonProjects.stockProgramV4.pullBasicStockData import GetBasicStockData
+from pythonProjects.stockProgramV4.back_testing import StartBackTesting
+from pythonProjects.stockProgramV4.tentative_portfolio import Tentative_Portfolio
+from pythonProjects.stockProgramV4.getHistoricalData import RetrieveHistoricalData
 from pythonProjects.stockProgramV3.baseClass import stockProgram
 
 
-def adapterGetData(obj):
-    obj.getData()
+
+
+#adaptees using this adapter are pullBasicStockData and getHistoricalData
+class getDataAdapter:
+    def __init__(self, **adaptedMethod):
+        self.__dict__.update(adaptedMethod)
 
 def interfaceGetData(obj, symbol):
     obj.setSymbol(symbol)
-    obj.getData()
+    getDataAdapter(data=obj.getData())
 
-
+#used by
+#bactesting
 def interfaceBackTest(obj, strat, historicalData):
     obj.setStratName(strat)
     #obj.setStrat()
     obj.setHistoricalData(historicalData)
-    #obj.getData()
+    #obj.setCashAmount(cash)
+    obj.getData()
 
 def interfaceCreatePortfolio(obj, fileName):
     obj.setPortfolio()
@@ -43,11 +49,12 @@ def interfaceLoadPortfolio(obj, fileName):
     obj.output()
 
 def main():
-    #base = stockProgram()
-    scrapper = getBasicStockData()
-    backtesting = startBackTesting()
-    userPortfolio = tentative_Portfolio()
-    histData = retrieveHistoricalData()
+
+    #Declaring class objects
+    scrapper = GetBasicStockData()
+    backtesting = StartBackTesting()
+    userPortfolio = Tentative_Portfolio()
+    histData = RetrieveHistoricalData()
 
 
 
@@ -55,8 +62,8 @@ def main():
            "description: gets data for selected stock\n\n" \
            "createPortfolio <file name>\n" \
            "description: creates a portfolio\n\n" \
-           "backtest <stock symbol> <strategy>\n"\
-           "        strategies: SmaCross, Rsi\n"\
+           "backtest <stock symbol> <strategy> <amount to invest>\n"\
+           "        strategies: SmaCross, Rsi 10000\n"\
            "example: backtest GOOG SmaCross\n"\
            "descrtiption: backtest a stock with strategy\n\n" \
            "update <file name> <stock symbol> <optional: -bd -bt>\n"\
@@ -97,8 +104,8 @@ def main():
         elif cmd[0] == "backtest":
             #conducting back testing
             interfaceGetData(histData, cmd[1])
+            #interfaceBackTest(backtesting, cmd[2], histData.historicalData, cmd[3])
             interfaceBackTest(backtesting, cmd[2], histData.historicalData)
-            adapterGetData(backtesting)
             print("back testing results: ")
             print(backtesting.bt.run())
             print()
@@ -140,3 +147,7 @@ if __name__ == '__main__':
     main()
 
 
+"""file is saved as a pickle which is a python dict, when you return a pickle, if html does not 
+python code, it uderstands json though, even though json and python dict is almost the same thing
+if olvin, if the html he is writing needs to view the pickle, so write an adapter to convert
+the pickle into a json."""
