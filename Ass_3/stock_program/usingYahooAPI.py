@@ -1,11 +1,13 @@
 import requests, json
 
 class GetBasicStockData():
+    #this class is responsible for getting basic stock data using yahoo api
     def __init__(self):
         self.stockData = {}
         self.stockSymbol = ""
 
     def __str__(self):
+        #print basic stock data
         output = ""
         for key, value in self.stockData.items():
             output += f'{key}: {value}' + '\n'
@@ -13,6 +15,7 @@ class GetBasicStockData():
         return output
 
     def getData(self):
+        #getting basic stock data using yahoo api
         url = "https://yfapi.net/v6/finance/quote"
         querystring = {"symbols": f"{self.stockSymbol},USD"}
         headers = {'x-api-key': "pCJyFfGicf5sG8cbj16XO95hHDCtbqFNaqNuaWvn"}
