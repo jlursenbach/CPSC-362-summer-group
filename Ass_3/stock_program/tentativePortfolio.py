@@ -1,6 +1,7 @@
 import pickle
 
 class Tentative_Portfolio():
+    #this class is responsible for creating and managing portfolio
     def __init__(self):
         self.portfolio = {}
         self.stockSymbol = ""
@@ -9,12 +10,15 @@ class Tentative_Portfolio():
         self.portfolio = {}
 
     def insertNewEntry(self):
+        #inserting a new stock into portfolio
         self.portfolio[self.stockSymbol] = {}
 
     def setBasicData(self, data):
-            self.portfolio[self.stockSymbol]['basic data'] = data
+        #inserting basic stock data into portfolio corresponding to its respective stock
+        self.portfolio[self.stockSymbol]['basic data'] = data
 
     def setBackTestResults(self, backTestResults, strat):
+        #inserting backtesting results corresponding to its respective stock and strategy used
         self.portfolio[self.stockSymbol][strat] = backTestResults
         #self.portfolio[self.stockSymbol]['backtesting results'] = backTestResults
 
@@ -27,6 +31,7 @@ class Tentative_Portfolio():
 
         :return:
         """
+        #saving portfolio as a pickle file
         if filename:
             save_file = f"{filename}.pickle"
         else:
@@ -45,6 +50,7 @@ class Tentative_Portfolio():
 
         :return:
         """
+        #loading our portfolio
         if filename:
             save_file = f"{filename}.pickle"
         else:
@@ -61,6 +67,7 @@ class Tentative_Portfolio():
             return False
 
     def output(self):
+        #output portfolio contents
         flag = False
         for key, value in self.portfolio.items():
             print(f"stock: {key}\n")
