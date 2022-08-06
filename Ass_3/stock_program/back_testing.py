@@ -7,6 +7,7 @@ import talib
 import math
 
 #this was confirmed by the professor that it was implemented correctly
+#decorator function that determines which strategy to be used for backtesting
 def decoratorGetData(method):
     def wrapper(self):
         if self.strategyName == "SmaCross":
@@ -26,6 +27,7 @@ def decoratorGetData(method):
 
 
 class StartBackTesting:
+    #this class is responsible for conducting backtesting
     def __init__(self):
         self.strategyName = ""
         self.historicalData = pd.DataFrame()
@@ -34,6 +36,7 @@ class StartBackTesting:
 
     @decoratorGetData
     def getData(self):
+        #start backtesting
         self.bt = Backtest(self.historicalData, self.strategy, cash = self.cashAmount, commission=0.002,
                            exclusive_orders=True)
 
@@ -47,6 +50,20 @@ class StartBackTesting:
         self.cashAmount = int(cash)
 
 
+"""Backtesting.py which is a module we used has already implemented
+the strategy design pattern. The class called Strategy is the 
+common interface that is used by the other strategy classes
+
+An indicator that we did use the strategy pattern is that we passed
+our strategy classes as a parameter in the Backtest() 
+
+self.strategy is a variable tha contains the strategy classes that we can pass to backtest
+for example self.strategy = SmaCross
+
+self.bt = Backtest(self.historicalData, self.strategy, cash = self.cashAmount, commission=0.002,
+                           exclusive_orders=True)"""
+
+#strategy class
 class SmaCross(Strategy):
     """simple moving average crossover strat"""
     n1 = 50
@@ -63,6 +80,9 @@ class SmaCross(Strategy):
         elif crossover(self.sma2, self.sma1):
             self.sell()
 
+
+
+#strategy class
 class rsiOscillator(Strategy):
 
     upper = range(50, 85, 5)
@@ -87,6 +107,7 @@ class rsiOscillator(Strategy):
 
     return wrapper"""
 
+#strategy class
 class DCA(Strategy):
 
     amountToInvest = 10
