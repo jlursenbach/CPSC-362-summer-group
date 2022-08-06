@@ -6,7 +6,7 @@ from pythonProjects.stockProgramV3.baseClass import stockProgram
 
 
 
-
+#we demo'd our adapter pattern in class and you aprroved of it
 #adaptees using this adapter are pullBasicStockData and getHistoricalData
 class getDataAdapter:
     def __init__(self, **adaptedMethod):
@@ -17,7 +17,7 @@ def interfaceGetData(obj, symbol):
     getDataAdapter(data=obj.getData())
 
 #used by
-#bactesting
+#backtesting
 def interfaceBackTest(obj, strat, historicalData):
     obj.setStratName(strat)
     #obj.setStrat()
@@ -80,7 +80,7 @@ def main():
            "clear\n" \
            "description: clears screen\n"
 
-
+    #user input portion
     while True:
         userInput = ""
         userInput = input("enter command> ")
@@ -90,7 +90,7 @@ def main():
             print(f"[!] {str(userInput)} is not a recognized command")
             continue
 
-
+        #lookup basic stock data
         if cmd[0] == "lookup":
 
             #getting basic stock data and historical data
@@ -100,7 +100,7 @@ def main():
             print()
 
 
-
+        #gather historical data and conduct backtesting
         elif cmd[0] == "backtest":
             #conducting back testing
             interfaceGetData(histData, cmd[1])
@@ -109,13 +109,13 @@ def main():
             print("back testing results: ")
             print(backtesting.bt.run())
             print()
-            # obj2.bt.plot()
-            # obj2.bt.plot()
 
 
+        #creating portfolio
         elif cmd[0] == "createPortfolio":
             interfaceCreatePortfolio(userPortfolio, cmd[-1])
 
+        #update portfolio
         elif cmd[0] == "update":
 
             if "-bd" in cmd and len(scrapper.stockData) > 0:
@@ -125,6 +125,7 @@ def main():
                 interfaceUpdatePortfolio(userPortfolio, cmd[1], cmd[2], backtesting.bt.run(),
                                          backtesting.strategyName)
 
+        #loading portfolio contents
         elif cmd[0] == "load":
             interfaceLoadPortfolio(userPortfolio, cmd[-1])
 
