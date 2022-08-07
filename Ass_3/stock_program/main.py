@@ -2,6 +2,7 @@ from pythonProjects.stockProgramV4.pullBasicStockData import GetBasicStockData
 from pythonProjects.stockProgramV4.back_testing import StartBackTesting
 from pythonProjects.stockProgramV4.tentative_portfolio import Tentative_Portfolio
 from pythonProjects.stockProgramV4.getHistoricalData import RetrieveHistoricalData
+from pythonProjects.stockProgramV4.returnJson import convertToJson
 from pythonProjects.stockProgramV3.baseClass import stockProgram
 
 
@@ -55,6 +56,7 @@ def main():
     backtesting = StartBackTesting()
     userPortfolio = Tentative_Portfolio()
     histData = RetrieveHistoricalData()
+    convert = convertToJson()
 
 
 
@@ -114,6 +116,8 @@ def main():
         #creating portfolio
         elif cmd[0] == "createPortfolio":
             interfaceCreatePortfolio(userPortfolio, cmd[-1])
+            convert.converter(userPortfolio.portfolio)
+
 
         #update portfolio
         elif cmd[0] == "update":
@@ -125,9 +129,12 @@ def main():
                 interfaceUpdatePortfolio(userPortfolio, cmd[1], cmd[2], backtesting.bt.run(),
                                          backtesting.strategyName)
 
+            convert.converter(userPortfolio.portfolio)
+
         #loading portfolio contents
         elif cmd[0] == "load":
             interfaceLoadPortfolio(userPortfolio, cmd[-1])
+            convert.converter(userPortfolio.portfolio)
 
 
         elif cmd[0] == "exit":
