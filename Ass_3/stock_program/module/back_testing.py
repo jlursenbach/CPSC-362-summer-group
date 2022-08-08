@@ -3,7 +3,7 @@ from backtesting.lib import crossover
 import pandas as pd
 import pandas_datareader as pdr
 from backtesting.test import SMA, GOOG
-import talib
+#import talib
 import math
 
 #this was confirmed by the professor that it was implemented correctly
@@ -13,8 +13,8 @@ def decoratorGetData(method):
         if self.strategyName == "SmaCross":
             self.strategy = SmaCross
 
-        elif self.strategyName == "Rsi":
-            self.strategy = rsiOscillator
+        #elif self.strategyName == "Rsi":
+            #self.strategy = rsiOscillator
 
         elif self.strategyName == "DCA":
             self.strategy = DCA
@@ -83,7 +83,7 @@ class SmaCross(Strategy):
 
 
 #strategy class
-class rsiOscillator(Strategy):
+"""class rsiOscillator(Strategy):
 
     upper = range(50, 85, 5)
     lower = range(10, 45, 5)
@@ -97,7 +97,7 @@ class rsiOscillator(Strategy):
             self.position.close()
 
         elif crossover(self.lower, self.rsi):
-            self.buy()
+            self.buy()"""
 
 """def decoratorInputAmountToInvest(method):
     def wrapper(self):
