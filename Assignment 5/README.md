@@ -21,7 +21,8 @@ Zip of the program
 
 # Portfolio Demo:
 
-[https://www.youtube.com/watch?v=XziPngL4h6o](https://www.youtube.com/watch?v=XziPngL4h6o)
+
+[![image](https://user-images.githubusercontent.com/61986930/183350232-49a00b9f-d920-4e93-a796-046301de7ce8.png)](https://www.youtube.com/watch?v=XziPngL4h6o)
 
 # 1: Apply Adapter, Decorator, and Strategy design patterns.
 
