@@ -13,7 +13,7 @@ class getDataAdapter:
         self.__dict__.update(adaptedMethod)
 
 
-#working
+# making a difference
 class View:
     def __init__(self):
         pass
