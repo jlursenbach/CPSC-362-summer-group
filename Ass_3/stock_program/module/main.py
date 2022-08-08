@@ -1,9 +1,8 @@
-from pythonProjects.stockProgramV4.pullBasicStockData import GetBasicStockData
-from pythonProjects.stockProgramV4.back_testing import StartBackTesting
-from pythonProjects.stockProgramV4.tentative_portfolio import Tentative_Portfolio
-from pythonProjects.stockProgramV4.getHistoricalData import RetrieveHistoricalData
-from pythonProjects.stockProgramV4.returnJson import convertToJson
-from pythonProjects.stockProgramV3.baseClass import stockProgram
+from module.usingYahooAPI import GetBasicStockData
+from module.back_testing import StartBackTesting
+from module.tentativePortfolio import Tentative_Portfolio
+from module.getHistoricalData import RetrieveHistoricalData
+from module.returnJson import convertToJson
 
 
 
