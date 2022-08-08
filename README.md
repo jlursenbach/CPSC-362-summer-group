@@ -1,3 +1,5 @@
+[![Build and Deploy to S3](https://github.com/jlursenbach/CPSC-362-summer-group/actions/workflows/main.yml/badge.svg)](https://github.com/jlursenbach/CPSC-362-summer-group/actions/workflows/main.yml)
+
 # CPSC-362-summer-group
 Project Repo for Summer Software Engineering Project
 
