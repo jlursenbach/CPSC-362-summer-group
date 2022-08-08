@@ -12,6 +12,8 @@ class getDataAdapter:
     def __init__(self, **adaptedMethod):
         self.__dict__.update(adaptedMethod)
 
+
+#working
 class View:
     def __init__(self):
         pass
