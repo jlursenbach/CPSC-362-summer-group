@@ -49,7 +49,7 @@ class View:
 
     def interfaceLoadPortfolio(self, obj, fileName):
         obj.loadPortfolio(fileName)
-        print(obj)
+        obj.output()
 
 
 
