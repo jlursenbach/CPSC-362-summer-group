@@ -7,21 +7,12 @@ Coding Team:
 • Olvin Bolanos  - 
 • Thomas Tran -
 
-GitHub Repo:
-
+### GitHub Repo:
 [https://github.com/jlursenbach/CPSC-362-summer-group](https://github.com/jlursenbach/CPSC-362-summer-group)
-
-Github page for Program:
-
-[CPSC-362-summer-group/Ass_3/stock_program at main · jlursenbach/CPSC-362-summer-group](https://github.com/jlursenbach/CPSC-362-summer-group/tree/main/Ass_3/stock_program)
-
-Zip of the program
-
+### Zip of the program
 [stock_program.zip](Assignment%205%20276e5293852c4b55b3fa9c0fc76a9f5c/stock_program.zip)
 
 # Portfolio Demo:
-
-
 [![image](https://user-images.githubusercontent.com/61986930/183350232-49a00b9f-d920-4e93-a796-046301de7ce8.png)](https://www.youtube.com/watch?v=XziPngL4h6o)
 
 # 1: Apply Adapter, Decorator, and Strategy design patterns.
